@@ -1,0 +1,39 @@
+body {
+  background-color: #4E4E4E;
+}
+
+.head {
+  border: 1px solid black;
+  margin: auto;
+  height: auto;
+  width: 60%;
+}
+
+.responsive {
+  width: 66%;
+  max-width: 35px
+  height: auto;
+  float: left;
+}
+.search {
+  float: left;
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+}
+
+.left {
+
+}
+
+.right {
+
+}
+
+.center {
+
+}
+
+.bottom {
+
+}
