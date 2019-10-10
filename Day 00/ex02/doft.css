@@ -4,22 +4,24 @@ body {
 
 .head {
   border: 1px solid black;
+  background-color: #8F8F8F;
+  border-radius: 20px;
   margin: auto;
-  height: auto;
+  /*height: auto;*/
   width: 60%;
 }
 
 .responsive {
   width: 66%;
-  max-width: 35px
-  height: auto;
-  float: left;
+  max-width: 500px;
+  margin-right: 670px;
+  border-radius: 20px;
+  height: 200px;
 }
 .search {
-  float: left;
-  width: 20%;
-  max-width: 100px;
-  height: auto;
+  float: right;
+  margin-top: 2px;
+  z-index: 1;
 }
 
 .left {
