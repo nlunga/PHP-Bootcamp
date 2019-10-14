@@ -1,5 +1,9 @@
 <?php
-  echo $_GET['name'];
+  session_start();
+  if ($_SESSION['login'] != $_GET['login'] && $_GET['login'])
+    $_SESSION['login'] = $_GET['login'];
+  if ($_SESSION['password'] != $_GET['passwd'] && $_GET['passwd'])
+    $_SESSION['password'] = $_GET['passwd'];
 ?>
 
 <!DOCTYPE html>
@@ -9,15 +13,14 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="GET">
+    <form class="" action="./index.php" method="get">
       <label>Enter your username: </label>
-      <input type="text" name="login" value="">
+      <input type="text" name="login" value="<?php echo $_SESSION['login'];?>">
       <br>
       <label>Enter your password: </label>
-      <input type="password" name="passwd" value="">
+      <input type="password" name="passwd" value="<?php echo $_SESSION['password'];?>">
       <br>
       <input type="submit" name="submit" value="OK">
-      <button type="submit">PRESS ME!</button>
     </form>
   </body>
 </html>
